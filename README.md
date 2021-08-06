@@ -8,7 +8,7 @@ Simple bookstore app built with React-Redux.
 
 ## Live Demo
 
-[See Demo ](http://localhost:3000) to view it in the browser.
+[See Demo ](http://localhost:3000)
 
 
 ## Getting Started
