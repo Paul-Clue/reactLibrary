@@ -8,7 +8,7 @@ Simple bookstore app built with React-Redux.
 
 ## Live Demo
 
-[See Demo ](http://localhost:3000)
+[See Demo ](https://calm-headland-80359.herokuapp.com/)
 
 
 ## Getting Started
