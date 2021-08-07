@@ -1,13 +1,18 @@
 import './App.css';
 import PropTypes from 'prop-types';//eslint-disable-line
+import BooksList from './BooksList';
+import BooksForm from './BooksForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Brand New
-      </header>
-    </div>
+    <>
+      <div className="list">
+        <BooksForm />
+      </div>
+      <div className="form">
+        <BooksList />
+      </div>
+    </>
   );
 }
 
