@@ -6,22 +6,17 @@ import { createStore } from 'redux';
 import { v4 as uuidv4 } from 'uuid';
 import { devToolsEnhancer } from 'redux-devtools-extension';
 import rootReducer from './reducers';
-import App from './App';
+import App from './components/App';
 
-const Books = [
+const BOOKS = [
   {
     bookId: uuidv4(),
     name: 'some',
     category: 'Action',
   },
-
 ];
 
-const store = createStore(
-  rootReducer,
-  Books,
-  devToolsEnhancer(),
-);
+const store = createStore(rootReducer, { addRemoveBook: BOOKS }, devToolsEnhancer());
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function BooksForm() {
-  const cat = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];// eslint-disable-line
+  const cat = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <form>
       <label htmlFor="book">
