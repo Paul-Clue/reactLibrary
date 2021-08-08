@@ -11,7 +11,7 @@ import App from './components/App';
 const BOOKS = [
   {
     bookId: uuidv4(),
-    name: 'some',
+    name: 'Help Book',
     category: 'Action',
   },
 ];
