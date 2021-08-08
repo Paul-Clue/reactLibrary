@@ -14,3 +14,11 @@
 .row {
   border: 2px solid black;
 }
+
+.rowBut {
+  border: 3px solid red;
+}
+
+.delete{
+  color: rgba(0, 0, 0, 0);
+}

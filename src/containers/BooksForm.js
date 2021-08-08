@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-// import { addBook, removeBook } from '../actions/index';
 import { addBook } from '../actions/index';
 
 function BooksForm() {
