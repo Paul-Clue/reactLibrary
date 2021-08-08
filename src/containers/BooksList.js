@@ -9,9 +9,9 @@ function BooksList() {
     <table>
       <thead>
         <tr>
-          <th>BookID</th>
           <th>Title</th>
           <th>Category</th>
+          <th>BookID</th>
         </tr>
       </thead>
       <tbody>
