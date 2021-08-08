@@ -1,7 +1,7 @@
 .list {
   text-align: center;
   margin: auto;
-  border: 3px solid red;
+  border: 5px solid blue;
   width: 700px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .rowBut {
-  border: 3px solid red;
+  border: 5px solid red;
 }
 
 .delete {

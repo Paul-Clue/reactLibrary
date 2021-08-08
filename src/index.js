@@ -16,7 +16,13 @@ const BOOKS = [
   },
 ];
 
-const store = createStore(rootReducer, { addRemoveBook: BOOKS }, devToolsEnhancer());
+const filters = 'All';
+
+const store = createStore(
+  rootReducer,
+  { addRemoveBook: BOOKS, filter: filters },
+  devToolsEnhancer(),
+);
 
 ReactDOM.render(
   <React.StrictMode>
