@@ -5,7 +5,6 @@ import '../App.css';
 function Book(props) {
   const { book } = props;
   const { remove } = props;
-  console.log(remove);//eslint-disable-line
   return (
     <tr>
       <td className="row">{book.title}</td>
