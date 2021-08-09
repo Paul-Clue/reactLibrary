@@ -16,7 +16,7 @@ const BOOKS = [
   },
 ];
 
-const filters = 'All';
+const filters = 'Action';
 
 const store = createStore(
   rootReducer,
