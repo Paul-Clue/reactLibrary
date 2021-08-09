@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
-import { removeBook, changeFilter } from '../actions/index';
+import { removeBook, CHANGE_FILTER } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 import '../App.css';
 
@@ -13,7 +13,7 @@ function BooksList() {
   }
 
   function handleFilterChange(filt) {
-    dispatch(changeFilter(filt));
+    dispatch(CHANGE_FILTER(filt));
   }
 
   const booksList = useSelector((state) => state.addRemoveBook);

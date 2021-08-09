@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 function CategoryFilter(props) {
   const category = useRef();
-  const { filt } = props;
+  const cat2 = useRef();
+  // const { filt } = props;
+  console.log(cat2);//eslint-disable-line
   const { filter } = props;
 
   function handleForm(event) { event.preventDefault(); }
@@ -17,8 +19,8 @@ function CategoryFilter(props) {
 
       <label htmlFor="category">
         Category:
-        <select name="category" id="category" value={filt} ref={category} onChange={() => filter(category.current.value)}>
-          <option value="All" key="All">All</option>
+        <select name="category" id="category" ref={category} onClick={() => filter(category.current.value)}>
+          <option value="All" key="All" ref={cat2}>All</option>
           {cat.map((catt) => <option value={catt} key={catt}>{catt}</option>)}
         </select>
       </label>
@@ -26,7 +28,7 @@ function CategoryFilter(props) {
   );
 }
 
-CategoryFilter.propTypes = { filt: PropTypes.instanceOf(Function).isRequired };
+// CategoryFilter.propTypes = { filt: PropTypes.instanceOf(Function).isRequired };
 CategoryFilter.propTypes = { filter: PropTypes.instanceOf(Function).isRequired };
 
 export default CategoryFilter;
