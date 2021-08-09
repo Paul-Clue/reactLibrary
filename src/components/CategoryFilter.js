@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 function CategoryFilter(props) {
   const category = useRef();
   const cat2 = useRef();
-  // const { filt } = props;
-  console.log(cat2);//eslint-disable-line
+
   const { filter } = props;
 
   function handleForm(event) { event.preventDefault(); }
@@ -28,7 +27,6 @@ function CategoryFilter(props) {
   );
 }
 
-// CategoryFilter.propTypes = { filt: PropTypes.instanceOf(Function).isRequired };
 CategoryFilter.propTypes = { filter: PropTypes.instanceOf(Function).isRequired };
 
 export default CategoryFilter;
