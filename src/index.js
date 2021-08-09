@@ -11,12 +11,18 @@ import App from './components/App';
 const BOOKS = [
   {
     bookId: uuidv4(),
-    name: 'some',
+    title: 'Help Book',
     category: 'Action',
   },
 ];
 
-const store = createStore(rootReducer, { addRemoveBook: BOOKS }, devToolsEnhancer());
+const filters = 'All';
+
+const store = createStore(
+  rootReducer,
+  { addRemoveBook: BOOKS, filter: filters },
+  devToolsEnhancer(),
+);
 
 ReactDOM.render(
   <React.StrictMode>

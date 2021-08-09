@@ -1,7 +1,7 @@
 .list {
   text-align: center;
   margin: auto;
-  border: 3px solid red;
+  border: 5px solid blue;
   width: 700px;
 }
 
@@ -9,4 +9,16 @@
   margin: auto;
   border: 3px solid black;
   width: 700px;
+}
+
+.row {
+  border: 2px solid black;
+}
+
+.rowBut {
+  border: 5px solid red;
+}
+
+.delete {
+  color: rgba(0, 0, 0, 0);
 }

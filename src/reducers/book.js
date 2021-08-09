@@ -1,8 +1,3 @@
-import { addBook, removeBook } from '../actions/index';
-
-const CREATE_BOOK = addBook.type;
-const REMOVE_BOOK = removeBook.type;
-
 const BooksReducer = (state = [], action) => {
   let changedState = [...state];
 
@@ -11,10 +6,10 @@ const BooksReducer = (state = [], action) => {
   }
 
   switch (action.type) {
-    case CREATE_BOOK:
+    case 'CREATE_BOOK':
       changedState = [...changedState, action.payload];
       return changedState;
-    case REMOVE_BOOK:
+    case 'REMOVE_BOOK':
       changedState = changedState.filter(eraseBook);
       return changedState;
     default:
