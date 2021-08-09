@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../actions/index';
 
+// GET THE STATE FOR CATEGORY AND FIX IT IN THE "handleSubmit" FUNCTION
 function BooksForm() {
   const bookTitle = useRef();
   const bookCategory = useRef();

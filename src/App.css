@@ -7,7 +7,6 @@
 
 .form {
   margin: auto;
-  border: 3px solid black;
   width: 700px;
 }
 
@@ -21,4 +20,14 @@
 
 .delete {
   color: rgba(0, 0, 0, 0);
+}
+
+.filter {
+  border: 5px solid black;
+  width: 690px;
+}
+
+.table {
+  border: 5px solid blue;
+  width: 100%;
 }
