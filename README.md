@@ -6,7 +6,7 @@ Simple bookstore app built with React-Redux.
 
 - HTML, CSS and JavaScript
 - React and Redux
-- Node.js, eslint and stylelint
+- Node.js, eslint and stylelint linters
 
 ## Live Demo
 
