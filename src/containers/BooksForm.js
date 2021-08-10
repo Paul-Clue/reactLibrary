@@ -43,10 +43,11 @@ function BooksForm() {
         ADD NEW BOOK
       </h2>
 
-      <input type="text" name="book" className="inputPanel" id="book" defaultValue="" ref={bookTitle} onChange={handleChangeTitle} />
+      <input type="text" name="book" className="inputPanel" id="book" defaultValue="" ref={bookTitle} onChange={handleChangeTitle} placeholder="BOOK TITLE" />
 
-      <select name="category" className="selectPanel" id="category" defaultValue="" ref={bookCategory} onClick={handleChangeCategory}>
-        {cat.map((catt) => <option value={catt} key={catt}>{catt}</option>)}
+      <select name="category" className="selectPanel" id="category" defaultValue="" ref={bookCategory} onClick={handleChangeCategory} required>
+        <option value="" disabled selected hidden>Category</option>
+        {cat.map((catt) => <option value={catt} key={catt} placeholder="CATEGORY">{catt}</option>)}
       </select>
       <input type="submit" value="Add Book" className="submitButton" onClick={handleSubmit} />
     </form>

@@ -5,6 +5,12 @@
   margin: 0 6.25rem 0 6.25rem;
 }
 
+select:invalid { color: #c4c4c4; }
+
+::placeholder {
+  color: #c4c4c4;
+}
+
 .lineHorizontal {
   width: 75rem;
   margin: 2.5rem 0.063rem 1.813rem 0;
