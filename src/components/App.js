@@ -1,18 +1,13 @@
-import '../App.css';
+import React from 'react';
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
+import '../asset/stylesheets/App.css';
 
-function App() {
-  return (
-    <>
-      <div className="list">
-        <BooksForm />
-      </div>
-      <div className="form">
-        <BooksList />
-      </div>
-    </>
-  );
-}
+const App = () => (
+  <div className="appPanel">
+    <BooksList />
+    <BooksForm />
+  </div>
+);
 
 export default App;
