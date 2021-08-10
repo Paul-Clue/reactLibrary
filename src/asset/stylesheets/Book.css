@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .card {
-  display: flex;
   width: 64rem;
   height: 7.625rem;
   margin: 2.313rem 6.25rem 0;
@@ -17,12 +16,8 @@
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #888;
 }
@@ -31,12 +26,8 @@
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
 }
@@ -45,18 +36,13 @@
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
 }
 
 .bookActions {
-  display: flex;
   align-items: center;
   margin: 1.125rem 0;
 }
@@ -64,12 +50,8 @@
 .actionText {
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
   border: 0;
@@ -88,10 +70,6 @@
   border: solid 1px #e8e8e8;
 }
 
-.completed {
-  display: flex;
-}
-
 .circle {
   width: 4.25rem;
   height: 4.25rem;
@@ -105,12 +83,8 @@
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 0 0 0.688rem;
-  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #121212;
 }
@@ -120,27 +94,19 @@
   height: 1.125rem;
   margin: 0.438rem 0 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #888;
 }
 
 .current {
-  width: 7.875rem;
+  width: 8.875rem;
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 0;
   opacity: 0.5;
-  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   color: #888;
 }
@@ -149,12 +115,8 @@
   width: 4.688rem;
   height: 1.313rem;
   margin: 0.438rem 6.813rem 0.25rem 0;
-  font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.4px;
   color: #121212;
 }
@@ -169,12 +131,37 @@
   border-radius: 3px;
   color: #fff;
   background-color: #0290ff;
-  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
+}
+
+.bookTitle,
+.bookAuthor,
+.updateButton,
+.chapter,
+.current,
+.actionText {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+.bookCategory,
+.completedText,
+.percentage,
+.current,
+.actionText {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+.card,
+.bookActions,
+.completed {
+  display: flex;
 }
