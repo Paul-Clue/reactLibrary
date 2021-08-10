@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './asset/stylesheets/index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { v4 as uuidv4 } from 'uuid';
