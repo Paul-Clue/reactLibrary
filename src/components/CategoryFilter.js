@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
+import '../asset/stylesheets/CategoryFilter.css';
 
 function CategoryFilter(props) {
   const category = useRef();

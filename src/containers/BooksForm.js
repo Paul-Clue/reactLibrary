@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../actions/index';
+import '../asset/stylesheets/BooksForm.css';
 
 // GET THE STATE FOR CATEGORY AND FIX IT IN THE "handleSubmit" FUNCTION
 function BooksForm() {
@@ -37,20 +38,18 @@ function BooksForm() {
 
   const cat = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
-    <form onSubmit={handleForm}>
-      <label htmlFor="book">
-        Add Book:
-        <input type="text" name="book" id="book" defaultValue="" ref={bookTitle} onChange={handleChangeTitle} />
-      </label>
+    <form onSubmit={handleForm} className="formContainer">
+      <div className="lineHorizontal" />
+      <h2 className="formTitle">
+        ADD NEW BOOK
+      </h2>
 
-      <input type="submit" value="Submit" onClick={handleSubmit} />
+      <input type="text" name="book" className="inputPanel" id="book" defaultValue="" ref={bookTitle} onChange={handleChangeTitle} />
 
-      <label htmlFor="category">
-        Category:
-        <select name="category" id="category" defaultValue="" ref={bookCategory} onClick={handleChangeCategory}>
-          {cat.map((catt) => <option value={catt} key={catt}>{catt}</option>)}
-        </select>
-      </label>
+      <select name="category" className="selectPanel" id="category" defaultValue="" ref={bookCategory} onClick={handleChangeCategory}>
+        {cat.map((catt) => <option value={catt} key={catt}>{catt}</option>)}
+      </select>
+      <input type="submit" value="Add Book" className="submitButton" onClick={handleSubmit} />
     </form>
   );
 }
